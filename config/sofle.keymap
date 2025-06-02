@@ -96,16 +96,16 @@
             display-name = "default";
 // ---------------------------------------------------------------------------------------------------------------------------
 // | ESC   |  1  |  2  |  3  |  4  |   5    |                                       |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | GRAVE |  Q  |  W  |  E  |  R  |   T    |                                       |  Y  |  U  |  I  |  O  |  P  |  \   |
-// | GUI   |  A  |  S  |  D  |  F  |   G    |                                       |  H  |  J  |  K  |  L  |  ;  |  '   |
+// | TAB |  Q  |  W  |  E  |  R  |   T    |                                       |  Y  |  U  |  I  |  O  |  P  |  \   |
+// | LSHIFT   |  A  |  S  |  D  |  F  |   G    |                                       |  H  |  J  |  K  |  L  |  ;  |  '   |
 // | MINUS |  Z  |  X  |  C  |  V  |   B    | MUTE |                         | PP  |  N  |  M  |  ,  |  .  |  /  | EQUAL|
-//            | CTRL | ALT | GUI | LOWER   | SPACE | SHIFT |                 | RAISE  | GUI | ALT | CTRL |
+//                    | CTRL | ALT | GUI | LOWER | SPACE |               | ENTER | RAISE  | GUI | ALT | CTRL |
             bindings = <
     &kp ESC      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                                             &kp N6         &kp N7    &kp N8     &kp N9    &kp N0    &kp BSPC
-    &kp GRAVE    &kp Q     &kp W     &kp E     &kp R     &kp T                                              &kp Y          &kp U     &kp I      &kp O     &kp P     &kp BSLH
-    &kp LGUI     &kp A     &kp S     &kp D     &kp F     &kp G                                              &kp H          &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
+    &kp TAB    &kp Q     &kp W     &kp E     &kp R     &kp T                                              &kp Y          &kp U     &kp I      &kp O     &kp P     &kp BSLH
+    &kp LSHIFT     &kp A     &kp S     &kp D     &kp F     &kp G                                              &kp H          &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
     &kp MINUS    &kp Z     &kp X     &kp C     &kp V     &kp B          &kp C_MUTE          &kp C_PP          &kp N          &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp EQUAL
-                      &kp LCTRL  &kp LALT  &kp LGUI  &lt LOWER TAB &kp SPACE             &kp LSHIFT           &lt RAISE ENTER &kp RGUI  &kp RALT  &kp RCTRL
+                      &kp LCTRL  &kp LALT  &kp LGUI  &lt LOWER  &kp SPACE             &kp ENTER           &lt RAISE  &kp RGUI  &kp RALT  &kp RCTRL
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_up_down>;
         };
@@ -113,13 +113,13 @@
         lower_layer {
             display-name = "lower";
 // -----------------------------------------------------------------------------------------------------------------------------
-// |       | F1  | F2  | F3  | F4  | F5  |                                       | F6  | F7  | F8  | F9  | F10  | F11  |
+// | GRAVE | F1  | F2  | F3  | F4  | F5  |                                       | F6  | F7  | F8  | F9  | F10  | F11  |
 // |       | !   | @   | #   | $   | %   |                                       |  1  |  2  |  3  | 4   |  5   | F12  |
 // | ESC   | ^   | &   | *   | (   | )   |                                       |  6  |  7  |  8  | 9   |  0   |      |
 // |       |     |     |     |     |     |                                       |     |     |     |     |      |      |
 //            |     |     |     |     |     |                                       |     |     |     |     |      |
             bindings = <
-&trans  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                         &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+&GRAVE  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                         &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
 &trans  &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)                     &kp N1 &kp N2 &kp N3 &kp N4 &kp N5  &kp F12
 &kp ESC &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)                     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0  &trans
 &trans  &trans     &trans     &trans     &trans     &trans     &trans     &trans   &trans &trans &trans &trans &trans  &trans
