@@ -105,7 +105,7 @@
     &mt LCTRL TAB    &kp Q     &kp W     &kp E     &kp R     &kp T                                              &kp Y          &kp U     &kp I      &kp O     &kp P     &kp BSLH
     &kp LSHIFT     &kp A     &kp S     &kp D     &kp F     &kp G                                              &kp H          &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
     &kp MINUS    &kp Z     &kp X     &kp C     &kp V     &kp B          &kp C_MUTE          &kp C_PP          &kp N          &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp EQUAL
-                      &kp LCTRL  &kp LALT  &kp LGUI  &lt LOWER  &kp SPACE             &lt RAISE ENTER  &kp LSHIFT  &kp RCTRL  &kp RALT  &kp LGUI
+                      &kp LCTRL  &kp LALT  &kp LGUI  &mo LOWER  &kp SPACE             &lt RAISE ENTER  &kp LSHIFT  &kp RCTRL  &kp RALT  &kp LGUI
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_up_down>;
         };
